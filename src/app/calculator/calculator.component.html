@@ -1,0 +1,42 @@
+
+<div class="header-calc">
+  <h2 >
+    Crypto calculator
+  </h2>
+  <span>
+    Calculate the price of your cryptocurrency in real time.
+  </span>
+</div>
+
+<div class="calculator">
+  <mat-card>
+  <label>
+    <span>Select Cryptocurrency:</span>
+    <select [(ngModel)]="coinId" (change)="validateCoinId()">
+      <option value="" disabled selected>Select your Crypto</option>
+      <option place *ngFor="let crypto of cryptoList" [value]="crypto.id">{{ crypto.name }}</option>
+    </select>
+  </label>
+
+  <label>
+    <span>Enter Amount:</span>
+    <input type="number" [(ngModel)]="amount" (input)="validateAmount()">
+  </label>
+
+  <label>
+    <span>Convert to:</span>
+    <select (change)="validateTargetCurrency()" [(ngModel)]="targetCurrency">
+      <option value="" disabled selected>Select your Currency</option>
+      <option *ngFor="let currency of fiatCurrencies" [value]="currency">{{ currency.toUpperCase() }}</option>
+    </select>
+  </label>
+  <div class="convertBtn">
+    <button  (click)="convertCurrency()">Convert</button>
+  </div>
+  <h3 *ngIf="conversionResult !== null">Converted: {{ conversionResult }} {{ targetCurrency.toUpperCase() }}</h3>
+  </mat-card>
+</div>
+
+<div class="popup" [@showHide]="showPopup ? 'show' : 'hide'">
+  {{ popupMessage }}
+</div>

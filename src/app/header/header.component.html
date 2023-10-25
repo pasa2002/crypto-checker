@@ -1,0 +1,13 @@
+<header>
+  <mat-toolbar>
+    <img routerLink="/coin-list" src="../../assets/images/Cryptico-removebg-preview.png" alt="" class="logo">
+    <span class="example-spacer"></span>
+
+    <mat-form-field class="selected-currency">
+      <mat-select (valueChange)="sendCurrency($event)" class="text-sm" [(ngModel)]="selectedCurrency">
+        <mat-option class="currency" value="EUR">EUR</mat-option>
+        <mat-option class="currency" value="USD">USD</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar>
+</header>

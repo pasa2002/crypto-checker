@@ -1,0 +1,16 @@
+# Set CORS headers
+Header set Access-Control-Allow-Origin "https://sanjaya-shrestha.developerakademie.net"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE, PUT"
+Header set Access-Control-Allow-Headers "Content-Type"
+
+# Enable the rewrite engine
+RewriteEngine On
+
+# If an existing asset or directory is requested go to it as it is
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# If the requested resource doesn't exist, use index.html
+RewriteRule ^ /index.html
+

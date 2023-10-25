@@ -1,0 +1,30 @@
+header{
+padding: 3% 5% 0 5%;
+.logo{
+  width: 14rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+}
+.currency{
+  font-size: 1.5rem;
+}
+
+.selected-currency{
+  font-size: 1.5rem;
+}
+
+mat-form-field{
+  width: 12%;
+}
+@media only screen and (max-width: 600px) {
+
+  .logo{
+    width: 10rem !important;
+
+  }
+}

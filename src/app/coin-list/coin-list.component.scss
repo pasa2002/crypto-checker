@@ -1,0 +1,170 @@
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .header-text{
+  height: 40%;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top:2rem;
+    outline: none;
+    .calc-btn,.list-btn{
+      padding: 1rem;
+      background-color: transparent;
+      font-size: 1.3rem;
+      font-weight: 400;
+      border: 1px solid rgb(66, 58, 77);
+      border-radius: 1rem;
+
+      &:hover{
+        background-color: white;
+        color: rgb(60, 27, 90);
+        transition: 225ms ease-in-out;
+        font-weight: 700;
+      }
+    }
+  }
+  h2{
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.0083em;
+  }
+
+  h6{
+    color: #9e9999;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.00714em;
+  }
+}
+}
+
+.banner{
+
+  min-height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  .banner-img{
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+.sub-header{
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  gap:2rem;
+  margin-top: 5rem;
+
+    .card{
+    background: transparent;
+    border: none;
+    display: flex;
+    padding:1rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .card-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img{
+      height: 6rem;
+      width:  6rem;
+      margin: 0 auto;
+    }
+
+    h5{
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    span{
+      font-size: 1.3rem;
+    }
+
+    p{
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .card-body{
+      display: flex;
+      flex-direction: column !important;
+      color: white;
+      gap: 1rem;
+
+    }
+
+  .card-title{
+
+    .text-danger{
+      font-size: 1.5rem;
+    }
+  }
+}
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
+th{
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.fp-animation{
+  width: 70rem !important;
+  height: 60rem !important;
+}
+
+.filter-table{
+  margin-top: 2rem;
+  mat-label{
+    font-size: 1.7rem;
+  }
+  input{
+    color: white;
+    font-size: 2.0rem;
+  }
+}
+
+.coin-row{
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgb(56, 40, 114);
+  }
+}
