@@ -168,3 +168,57 @@ th{
     background-color: rgb(56, 40, 114);
   }
 }
+.d-none{
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .fp-animation{
+    width: 40rem !important;
+    height: 30rem !important;
+  }
+
+  .banner{
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .row{
+    display: none !important;
+  }
+
+  .mt-10{
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fp-animation{
+display: none;
+  }
+
+  .column-24hr-change {
+    display: none;
+}
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .banner{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mt-10{
+    margin-top: unset !important;
+  }
+}

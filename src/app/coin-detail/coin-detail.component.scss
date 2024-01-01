@@ -1,8 +1,17 @@
+.coin-detail{
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+
+
+}
+
 .row{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20rem;
+
   overflow: hidden;
   .details{
     .img{
